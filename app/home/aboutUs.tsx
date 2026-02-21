@@ -1,0 +1,78 @@
+import Image from "next/image";
+
+export default function AboutUs() {
+  const aboutImages = [
+    {
+      src: "/about/4.jpg",
+      title: "Saloon",
+      description:
+        "Get all saloon services including haircuts, colouring, straightening etc",
+    },
+    {
+      src: "/about/3.jpg",
+      title: "Zumba",
+      description:
+        "Get all saloon services including haircuts, colouring, straightening etc",
+    },
+    {
+      src: "/about/2.jpg",
+      title: "Aari Designing",
+      description:
+        "Get all saloon services including haircuts, colouring, straightening etc",
+    },
+    {
+      src: "/about/1.jpg",
+      title: "Fashion Designing",
+      description:
+        "Get all saloon services including haircuts, colouring, straightening etc",
+    },
+  ];
+  return (
+    <div className="w-full grid place-items-center text-center gap-6 md:gap-10 py-[30px] md:py-[60px]">
+      <p className="text-black text-[32px] flex items-center gap-3 font-500">
+        <span className="w-[18px] h-[18px] rounded-full theme-bg inline-block"></span>
+        About Us
+      </p>
+      <div>
+        <p className="w-[300px] lg:w-[1360px] text-[#6D6D6D] items-center text-[20px] lg:text-[40px] leading-[124%] tracking-[-1.6px] geist-font font-500">
+          <span className="theme-text">
+            At Family Lounge, we're more than just a lounge.&nbsp;
+          </span>
+          We're a community hub offering salon services, fashion design classes, zumba, tailoring, and aari design work.&nbsp;
+          <span className="theme-text">
+            Discover your potential with us!
+          </span>
+        </p>
+      </div>
+      <div className="w-full md:pt-[95px] grid md:flex items-center justify-center gap-6">
+        {aboutImages.map((item, index) => (
+          <div
+            key={index}
+            className="relative w-[309px] lg:w-[350px] h-[440px] rounded-[20px] overflow-hidden"
+          >
+            <Image
+              src={item.src}
+              alt="banner"
+              width={694}
+              height={572}
+              priority
+            />
+
+            {item.title && (
+              <div className="w-full flex items-end h-[220px] absolute bottom-0 z-10 gradient-blue-bg p-6">
+                <div className="w-full">
+                  <p className="text-white text-start text-[41.33px] font-bold pr-4">
+                    {item.title}
+                  </p>
+                  <p className="geist-font text-[#CFC2FF] text-start text-[18.13px] leading-[18.08px] tracking-[-0.24px]">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
