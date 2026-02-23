@@ -20,7 +20,7 @@ export default function Footer() {
                     />
                 </div>
 
-                <div className="w-full flex items-start md:justify-end gap-6 md:gap-12 lg:gap-20 md:px-20 Inter-re-font">
+                <div className="w-full flex items-start justify-between md:justify-end gap-6 md:gap-12 lg:gap-20 md:px-20 Inter-re-font">
                     
                     {/* Contact */}
                     <div className="w-[170px] md:w-[250px] grid">
@@ -34,7 +34,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     {/* Services */}
-                    <div className="w-fit grid text-[#373737]">
+                    <div className="w-fit grid">
                         <h3 className="text-lg font-semibold mb-2 md:mb-4">About</h3>
                         <h3 className="text-lg font-semibold mb-2 md:mb-4">Packages</h3>
                         <h3 className="text-lg font-semibold mb-2 md:mb-4">Blog</h3>

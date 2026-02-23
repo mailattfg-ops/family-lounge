@@ -66,8 +66,8 @@ body {
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter_24pt-Regular.ttf") format("truetype");
+  font-family: "Grotesk";
+  src: url("/fonts/ShAdGrotesk-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -83,6 +83,10 @@ body {
 
 .geist-font {
   font-family: "Geist", sans-serif;
+}
+
+.Grotesk-font {
+  font-family: "Grotesk", sans-serif;
 }
 
 .CalSans-re-font {

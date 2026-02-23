@@ -1,20 +1,32 @@
 "use client";
 
+import { redirect } from "next/navigation";
 import { useState } from "react";
+import Cookies from "js-cookie";
+import { useRouter } from "next/navigation";
+
 
 export default function LoginPage() {
   const [form, setForm] = useState({
-    email: "",
-    password: "",
+    email: "admin",
+    password: "password",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-
+  const router = useRouter();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Login Data:", form);
+    if (form.email === "admin" && form.password === "password") {
+      if (form.email === "admin" && form.password === "password") {
+        Cookies.set("adminAuth", "true", { expires: 1 }); // 1 day
+        router.push("/admin/gallery");
+      }
+    } else {
+      alert("Invalid credentials. Please try again.");
+    }
     // call your API here
   };
 
@@ -29,10 +41,10 @@ export default function LoginPage() {
           {/* Email */}
           <div>
             <label className="text-black block text-sm font-medium mb-1">
-              Email Address
+              User Address
             </label>
             <input
-              type="email"
+              type="text"
               name="email"
               value={form.email}
               onChange={handleChange}
