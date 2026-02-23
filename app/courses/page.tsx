@@ -46,25 +46,25 @@ export default function Home() {
               {courses.map((item) => (
                 <div
                   key={item.id}
-                  className="relative flex h-[516px] overflow-hidden rounded-[57.44px] border border-black bg-white"
+                  className="relative grid md:flex h-[516px] overflow-hidden rounded-[57.44px] border border-black bg-white"
                 >
                   {/* LEFT CONTENT */}
-                  <div className="w-1/2 flex flex-col justify-center gap-8 p-8">
-                    <p className="CalSans-re-font text-left theme-text text-[47.38px] leading-[77%]">
+                  <div className="w-full md:w-1/2 flex flex-col justify-center gap-2 md:gap-8 p-8">
+                    <p className="w-[30%] md:w-full CalSans-re-font text-left theme-text text-[30px] md:text-[47.38px] leading-[77%]">
                       {item.title}
                     </p>
 
-                    <p className="text-[14px] text-left theme-text leading-[100%]">
+                    <p className="w-full text-[8px] md:text-[14px] text-left theme-text leading-[100%]">
                       {item.description}
                     </p>
 
-                    <button className="w-full px-6 py-2 text-[16px] rounded-[12px] text-white theme-bg">
+                    <button className="w-full px-6 py-2 text-[10px] md:text-[16px] rounded-[12px] text-white theme-bg">
                       Register Now
                     </button>
                   </div>
 
                   {/* RIGHT IMAGE */}
-                  <div className="w-1/2">
+                  <div className="w-full md:w-1/2">
                     <Image
                       src={item.image}
                       alt={item.title}
@@ -75,9 +75,9 @@ export default function Home() {
                   </div>
 
                   {/* BADGE */}
-                  <div className="absolute right-0 top-0 bg-black text-white px-6 py-4 rounded-bl-[40px]">
-                    <p className="text-[12px] leading-tight">Duration of Course</p>
-                    <p className="text-[18px] leading-tight">3 Months</p>
+                  <div className="absolute grid right-0 top-0 bg-black text-white px-6 py-4 rounded-bl-[40px]">
+                    <p className="text-[8px] md:text-[12px] leading-tight">Duration of Course</p>
+                    <p className="text-[10px] md:text-[18px] leading-tight">3 Months</p>
                   </div>
                 </div>
               ))}

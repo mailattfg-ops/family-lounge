@@ -22,8 +22,8 @@ export default function Navbar() {
       ? "text-white after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-white after:content-['']"
       : "text-[#929292] hover:text-black"
     }`;
-    const isAdminRoute = pathname === "/admin" || pathname === "/admin/login" || pathname === "/admin/gallery" ;
-    
+  const isAdminRoute = pathname === "/admin" || pathname === "/admin/login" || pathname === "/admin/gallery";
+
   return (
     <nav className={`${isAdminRoute ? "hidden" : ""} sticky h-0 top-0 z-50 bg-[#f6f6f6]`}>
       {/* <nav className="relative h-0 top-0 z-50 bg-[#f6f6f6]"> */}
@@ -68,7 +68,10 @@ export default function Navbar() {
                 // onClick={onClick}
                 className={`w-max px-4 py-2 md:px-6 md:py-3 rounded-lg text-black bg-white`}
               >
-                Apply for Classes
+                <Link href="/courses">
+                  Apply for Classes
+                </Link>
+
               </button>
             </li>
           </ul>
