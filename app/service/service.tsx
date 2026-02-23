@@ -10,12 +10,12 @@ export default function Service() {
   return (
     <>
       <div className="w-full grid place-items-center text-center gap-10 pt-10">
-        <p className="theme-text font-Serif text-[69.21px] flex items-center gap-3 font-500">
+        <p className="theme-text font-Serif text-[69.21px] flex items-center gap-3 font-500 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-100 ease-[cubic-bezier(0.16,1,0.3,1)]">
           {/* <span className="w-[18px] h-[18px] rounded-full theme-bg inline-block"></span> */}
           Saloon
         </p>
         <div>
-          <p className="w-[300px] lg:w-[1300px] text-[#6D6D6D] items-center text-[20px] lg:text-[40px] leading-[124%] tracking-[-1.6px] geist-font font-500">
+          <p className="w-[300px] lg:w-[1300px] text-[#6D6D6D] items-center text-[20px] lg:text-[40px] leading-[124%] tracking-[-1.6px] geist-font font-500 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-200 ease-[cubic-bezier(0.16,1,0.3,1)]">
             <span className="theme-text">
               At Family Lounge, we're more than just a lounge.&nbsp;
             </span>
@@ -25,7 +25,7 @@ export default function Service() {
             </span>
           </p>
         </div>
-        <div className="w-full md:pt-[25px] grid md:flex items-center justify-center gap-6 px-2">
+        <div className="w-full md:pt-[25px] grid md:flex items-center justify-center gap-6 px-2 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-300 ease-[cubic-bezier(0.16,1,0.3,1)]">
           <div className="w-full lg:w-[1300px] h-fit md:h-[700px] overflow-hidden rounded-[20px]">
             <Image
               src="/service/saloon.jpg"
@@ -38,14 +38,14 @@ export default function Service() {
         </div>
       </div>
       <div className="w-full grid place-items-center text-center gap-10 py-[50px]">
-        <p className="text-black text-[32px] flex items-center gap-3 font-500">
+        <p className="text-black text-[32px] flex items-center gap-3 font-500 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-100 ease-[cubic-bezier(0.16,1,0.3,1)]">
           <span className="w-[18px] h-[18px] rounded-full theme-bg inline-block"></span>
           Our Services
         </p>
 
         <div className="w-full max-w-[1250px] mx-auto grid gap-6 px-4">
           {services.map((service, index) => (
-            <div key={index}>
+            <div key={index} className={`reveal opacity-0 translate-y-20 transition-all duration-2000 delay-${100 * index} ease-[cubic-bezier(0.16,1,0.3,1)]`}>
               <div className="w-full flex items-center justify-between gap-4">
 
                 {/* Number */}
@@ -76,12 +76,12 @@ export default function Service() {
 
       </div>
       <div className="w-full grid place-items-center text-center gap-10 md:pt-10">
-        <p className="theme-text font-Serif text-[40px] md:text-[69.21px] flex items-center gap-3 font-500">
+        <p className="theme-text font-Serif text-[40px] md:text-[69.21px] flex items-center gap-3 font-500 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-100 ease-[cubic-bezier(0.16,1,0.3,1)]">
           {/* <span className="w-[18px] h-[18px] rounded-full theme-bg inline-block"></span> */}
           Tailoring Services
         </p>
         <div>
-          <p className="w-[300px] lg:w-[1300px] text-[#6D6D6D] items-center text-[20px] lg:text-[40px] leading-[124%] tracking-[-1.6px] geist-font font-500">
+          <p className="w-[300px] lg:w-[1300px] text-[#6D6D6D] items-center text-[20px] lg:text-[40px] leading-[124%] tracking-[-1.6px] geist-font font-500 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-200 ease-[cubic-bezier(0.16,1,0.3,1)]">
             <span className="theme-text">
               At Family Lounge, we're more than just a lounge.&nbsp;
             </span>
@@ -91,7 +91,7 @@ export default function Service() {
             </span>
           </p>
         </div>
-        <div className="w-full md:pt-[25px] grid md:flex items-center justify-center gap-6 px-2">
+        <div className="w-full md:pt-[25px] grid md:flex items-center justify-center gap-6 px-2 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-300 ease-[cubic-bezier(0.16,1,0.3,1)]">
           <div className="w-full lg:w-[1300px] h-fit md:h-[700px] overflow-hidden rounded-[20px]">
             <Image
               src="/service/tailor.jpg"
@@ -104,14 +104,14 @@ export default function Service() {
         </div>
       </div>
       <div className="w-full grid place-items-center text-center gap-10 py-[50px]">
-        <p className="text-black text-[32px] flex items-center gap-3 font-500">
+        <p className="text-black text-[32px] flex items-center gap-3 font-500 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-100 ease-[cubic-bezier(0.16,1,0.3,1)]">
           <span className="w-[18px] h-[18px] rounded-full theme-bg inline-block"></span>
           Our Services
         </p>
 
         <div className="w-full max-w-[1250px] mx-auto grid gap-6 px-4">
           {services.map((service, index) => (
-            <div key={index}>
+            <div key={index} className={`reveal opacity-0 translate-y-20 transition-all duration-2000 delay-${100 * index} ease-[cubic-bezier(0.16,1,0.3,1)]`}>
               <div className="w-full flex items-center justify-between gap-4">
 
                 {/* Number */}

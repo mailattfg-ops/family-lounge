@@ -29,12 +29,12 @@ export default function AboutUs() {
   ];
   return (
     <div className="w-full grid place-items-center text-center gap-6 md:gap-10 py-[30px] md:py-[60px]">
-      <p className="text-black text-[32px] flex items-center gap-3 font-500">
+      <p className="text-black text-[32px] flex items-center gap-3 font-500 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-100 ease-[cubic-bezier(0.16,1,0.3,1)]">
         <span className="w-[18px] h-[18px] rounded-full theme-bg inline-block"></span>
         About Us
       </p>
       <div>
-        <p className="w-[300px] lg:w-[1360px] text-[#6D6D6D] items-center text-[20px] lg:text-[40px] leading-[124%] tracking-[-1.6px] geist-font font-500">
+        <p className="w-[300px] lg:w-[1360px] text-[#6D6D6D] items-center text-[20px] lg:text-[40px] leading-[124%] tracking-[-1.6px] geist-font font-500 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-100 ease-[cubic-bezier(0.16,1,0.3,1)]">
           <span className="theme-text">
             At Family Lounge, we're more than just a lounge.&nbsp;
           </span>
@@ -44,11 +44,11 @@ export default function AboutUs() {
           </span>
         </p>
       </div>
-      <div className="w-full md:pt-[95px] grid md:flex items-center justify-center gap-6">
+      <div className="w-full md:pt-[50px] grid md:flex items-center justify-center gap-6">
         {aboutImages.map((item, index) => (
           <div
             key={index}
-            className="relative w-[309px] lg:w-[350px] h-[440px] rounded-[20px] overflow-hidden"
+            className={`relative w-[309px] lg:w-[350px] h-[440px] rounded-[20px] overflow-hidden reveal opacity-0 translate-y-20 transition-all duration-2000 delay-${100*index} ease-[cubic-bezier(0.16,1,0.3,1)]`}
           >
             <Image
               src={item.src}

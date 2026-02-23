@@ -1,7 +1,28 @@
+"use client";
 import Image from "next/image"; 
 import AboutUs from "./aboutUs";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+      const elements = document.querySelectorAll(".reveal");
+  
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.remove("opacity-0", "translate-y-20");
+              entry.target.classList.add("opacity-100", "translate-y-0");
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+  
+      elements.forEach((el) => observer.observe(el));
+  
+      return () => observer.disconnect();
+    }, []);
   
   return (
     <div className="flex min-h-screen items-center justify-center font-sans bg-[#f6f6f6]">
@@ -10,13 +31,24 @@ export default function Home() {
           
 
           <div className="relative z-10 w-full grid gap-0 pt-10 md:pt-65">
-            <p className="theme-text text-[14.85px] md:text-[19px] lg:text-[24px]">Redefining how</p>
-            <p className="theme-text text-[42.81px] md:text-[56px] lg:text-[69px] font-350 font-Serif leading-[0.89] pb-2">
+            <p className="theme-text text-[14.85px] md:text-[19px] lg:text-[24px] reveal 
+              opacity-0 translate-y-20 
+              transition-all duration-900  delay-100
+              ease-[cubic-bezier(0.16,1,0.3,1)]">Redefining how</p>
+            <p className="theme-text text-[42.81px] md:text-[56px] lg:text-[69px] font-350 font-Serif leading-[0.89] pb-2
+              reveal 
+              opacity-0 translate-y-20 
+              transition-all duration-900  delay-200
+              ease-[cubic-bezier(0.16,1,0.3,1)]">
               We are Elevating Family Experiences
             </p>
-            <p className="theme-text text-[14.85px] md:text-[19px] lg:text-[24px] ">All your needs in one single amazing place</p>
+            <p className="theme-text text-[14.85px] md:text-[19px] lg:text-[24px] 
+              reveal 
+              opacity-0 translate-y-20 
+              transition-all duration-900  delay-300
+              ease-[cubic-bezier(0.16,1,0.3,1)]">All your needs in one single amazing place</p>
           </div>
-          <div className="absolute z-9 top-0 left-0 w-ffit flex items-center justify-center overflow-hidden">
+          <div className="absolute z-9 top-0 left-0 w-ffit flex items-center justify-center overflow-hidden ">
             <Image
               src="/banner/bann-r.jpg"
               alt="banner"
@@ -38,7 +70,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full flex items-center justify-center overflow-hidden gap-6 md:pt-10">
+        <div className="w-full flex items-center justify-center overflow-hidden gap-6 md:pt-10 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-100 ease-[cubic-bezier(0.16,1,0.3,1)]">
           <Image
             src="/banner/bann1.svg"
             alt="banner"
