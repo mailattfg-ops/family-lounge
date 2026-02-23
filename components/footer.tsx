@@ -1,11 +1,14 @@
-// "use client";
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+      const pathname = usePathname();
+    const isAdminRoute = pathname === "/admin" || pathname === "/admin/login" || pathname === "/admin/gallery" ;
     return (
-        <footer className="w-full  bg-[#f6f6f6] text-black px-2 md:px-10">
+        <footer className={`${isAdminRoute ? "hidden" : ""} w-full  bg-[#f6f6f6] text-black px-2 md:px-10`}>
             <div className="w-full px-6 pt-14 pb-7 grid md:flex gap-10 justify-between">
 
                 {/* Brand Section */}
