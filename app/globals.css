@@ -116,3 +116,36 @@ body {
 .font-700 {
   font-weight: 700;
 }
+
+@keyframes leafLeft {
+  0%, 100% {
+    transform: translateY(0px) rotate(-0.5deg) scaleX(-1);
+  }
+  50% {
+    transform: translateY(-15px) rotate(1deg) scaleX(-1);
+  }
+}
+
+@keyframes leafRight {
+  0%, 100% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-0.5deg);
+  }
+}
+
+.leaf-right {
+  transform-origin: top right;
+  animation: leafRight 7s ease-in-out infinite;
+}
+
+
+
+.leaf-left {
+  animation: leafLeft 6s ease-in-out infinite;
+}
+
+/* .leaf-right {
+  animation: leafRight 6s ease-in-out infinite;
+} */

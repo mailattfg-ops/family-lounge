@@ -2,6 +2,7 @@
 import Image from "next/image"; 
 import AboutUs from "./aboutUs";
 import { useEffect } from "react";
+import Contact from "./contact";
 
 export default function Home() {
   useEffect(() => {
@@ -35,7 +36,7 @@ export default function Home() {
               opacity-0 translate-y-20 
               transition-all duration-900  delay-100
               ease-[cubic-bezier(0.16,1,0.3,1)]">Redefining how</p>
-            <p className="theme-text text-[42.81px] md:text-[56px] lg:text-[69px] font-350 font-Serif leading-[0.89] pb-2
+            <p className="theme-text text-[42.81px] md:text-[50px] lg:text-[69px] font-350 font-Serif leading-[0.89] pb-2
               reveal 
               opacity-0 translate-y-20 
               transition-all duration-900  delay-200
@@ -50,12 +51,12 @@ export default function Home() {
           </div>
           <div className="absolute z-9 top-0 left-0 w-ffit flex items-center justify-center overflow-hidden ">
             <Image
-              src="/banner/bann-r.jpg"
+              src="/banner/bann-l.jpg"
               alt="banner"
               width={327}
               height={400}
               priority
-              className="scale-x-[-1] w-[110px] md:w-[250px] lg:w-[327px] h-[200px] md:h-[310px] lg:h-[400px]"
+              className="scale-x-[-1] leaf-left w-[110px] md:w-[250px] lg:w-[327px] h-[200px] md:h-[310px] lg:h-[400px]"
             />
           </div>
           <div className="absolute z-9 top-0 right-0 w-ffit flex items-center justify-center overflow-hidden">
@@ -65,7 +66,7 @@ export default function Home() {
               width={327}
               height={400}
               priority
-              className="w-[110px] md:w-[250px] lg:w-[327px] h-[200px] md:h-[310px] lg:h-[400px]"
+              className="leaf-right w-[110px] md:w-[250px] lg:w-[327px] h-[200px] md:h-[310px] lg:h-[400px]"
             />
           </div>
         </div>
@@ -97,6 +98,7 @@ export default function Home() {
           />
         </div>
         <AboutUs />
+        <Contact />
       </main>
     </div>
   );

@@ -75,10 +75,10 @@ export default function Home() {
                 {item.title && (
                   <div className="w-full flex items-end h-[220px] absolute bottom-0 z-10 gradient-blue-bg p-6">
                     <div className="w-full">
-                      <p className="text-white text-start text-[41.33px] font-bold pr-4">
+                      <p className="text-white text-start text-[41.33px] leading-[41.22px] font-bold pr-4">
                         {item.title}
                       </p>
-                      <p className="geist-font text-[#CFC2FF] text-start text-[18.13px] leading-[18.08px] tracking-[-0.24px]">
+                      <p className="geist-font text-[#CFC2FF] text-start text-[18.13px] pt-2 leading-[18.08px] tracking-[-0.24px]">
                         {item.description}
                       </p>
                     </div>

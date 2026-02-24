@@ -39,7 +39,7 @@ export default function FormWithTable() {
     const supabase = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
         process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY!
-    );;
+    );
     console.log("supabase", supabase);
 
     // 🔐 Auth Check
@@ -88,7 +88,7 @@ export default function FormWithTable() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setLoading(true);
-        if (!form.image || !form.alt || !form.fileName) {
+        if (!form.image || !form.alt ) {
             alert("Image, Alt and File Name required");
             return;
         }

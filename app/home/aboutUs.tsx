@@ -44,7 +44,7 @@ export default function AboutUs() {
           </span>
         </p>
       </div>
-      <div className="w-full md:pt-[50px] grid md:flex items-center justify-center gap-6">
+      <div className="w-full md:pt-[50px] grid lg:flex items-center justify-center gap-6">
         {aboutImages.map((item, index) => (
           <div
             key={index}
