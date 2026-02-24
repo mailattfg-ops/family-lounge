@@ -1,9 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Contact from "../home/contact";
-import { createClient } from "@supabase/supabase-js";
 
 export default function Home() {
 

@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
-import WhyChoose from "./whyChoose";
 import Contact from "../../components/contact";
 
 export default function Home() {
@@ -115,7 +114,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <WhyChoose />
         <Contact />
 
       </main>

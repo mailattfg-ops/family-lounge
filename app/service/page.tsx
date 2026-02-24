@@ -58,11 +58,11 @@ export default function Home() {
             Our Services
           </p>
 
-          <div className="w-full grid md:flex items-center justify-center gap-6">
+          <div className="w-full grid md:grid-cols-2 lg:flex items-center justify-center gap-6  md:px-10 lg:px-5">
             {aboutImages.map((item, index) => (
               <div
                 key={index}
-                className={`relative w-[309px] lg:w-[350px] h-[440px] rounded-[20px] overflow-hidden reveal opacity-0 translate-y-20 transition-all duration-2000 delay-${100 * index} ease-[cubic-bezier(0.16,1,0.3,1)]`}
+                className={`relative w-[309px] md:w-full lg:w-[350px] h-[440px] rounded-[20px] overflow-hidden reveal opacity-0 translate-y-20 transition-all duration-2000 delay-${100 * index} ease-[cubic-bezier(0.16,1,0.3,1)]`}
               >
                 <Image
                   src={item.src}

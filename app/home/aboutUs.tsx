@@ -34,7 +34,7 @@ export default function AboutUs() {
         About Us
       </p>
       <div>
-        <p className="w-[300px] lg:w-[1360px] text-[#6D6D6D] items-center text-[20px] lg:text-[40px] leading-[124%] tracking-[-1.6px] geist-font font-500 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-100 ease-[cubic-bezier(0.16,1,0.3,1)]">
+        <p className="w-[300px] md:w-[600px] lg:w-[1360px] text-[#6D6D6D] items-center text-[20px] lg:text-[40px] leading-[124%] tracking-[-1.6px] geist-font font-500 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-100 ease-[cubic-bezier(0.16,1,0.3,1)]">
           <span className="theme-text">
             At Family Lounge, we're more than just a lounge.&nbsp;
           </span>
@@ -44,11 +44,11 @@ export default function AboutUs() {
           </span>
         </p>
       </div>
-      <div className="w-full md:pt-[50px] grid lg:flex items-center justify-center gap-6">
+      <div className="w-full md:pt-[50px] grid md:grid-cols-2 lg:flex items-center justify-center gap-6 md:px-10 lg:px-0">
         {aboutImages.map((item, index) => (
           <div
             key={index}
-            className={`relative w-[309px] lg:w-[350px] h-[440px] rounded-[20px] overflow-hidden reveal opacity-0 translate-y-20 transition-all duration-2000 delay-${100*index} ease-[cubic-bezier(0.16,1,0.3,1)]`}
+            className={`relative w-[309px] md:w-full lg:w-[350px] h-[440px] rounded-[20px] overflow-hidden reveal opacity-0 translate-y-20 transition-all duration-2000 delay-${100*index} ease-[cubic-bezier(0.16,1,0.3,1)]`}
           >
             <Image
               src={item.src}

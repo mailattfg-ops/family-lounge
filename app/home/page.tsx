@@ -36,7 +36,7 @@ export default function Home() {
               opacity-0 translate-y-20 
               transition-all duration-900  delay-100
               ease-[cubic-bezier(0.16,1,0.3,1)]">Redefining how</p>
-            <p className="theme-text text-[42.81px] md:text-[50px] lg:text-[69px] font-350 font-Serif leading-[0.89] pb-2
+            <p className="theme-text text-[38px] md:text-[56px] lg:text-[69px] font-350 font-Serif leading-[0.89] pb-2
               reveal 
               opacity-0 translate-y-20 
               transition-all duration-900  delay-200

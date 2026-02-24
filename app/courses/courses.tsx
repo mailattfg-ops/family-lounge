@@ -28,8 +28,9 @@ export default function Courses() {
 
   return (
     <div className="grid min-h-screen items-center justify-center gap-10 pb-8">
+      
       <div className="w-full grid justify-center gap-6">
-        <p className="theme-text CalSans-re-font text-[35px] md:text-[55px] lg:text-[64.19px] leading-[100%] text-center flex justify-center gap-3 font-500
+        <p className="theme-text CalSans-re-font text-[35px] md:text-[55px] lg:text-[64.19px] md:leading-[80%] leading-[100%]  text-center flex justify-center gap-3 font-500
               reveal 
               opacity-0 translate-y-20 
               transition-all duration-900 
@@ -40,7 +41,7 @@ export default function Courses() {
           {aboutImages.map((item, index) => (
             <div
               key={index}
-              className={`relative w-[309px] lg:w-[380px] h-[440px] rounded-[20px] overflow-hidden reveal opacity-0 translate-y-20 transition-all duration-2000 delay-${100 * index} ease-[cubic-bezier(0.16,1,0.3,1)]`}
+              className={`relative w-[309px] md:w-[230px] lg:w-[380px] h-[440px] rounded-[20px] overflow-hidden reveal opacity-0 translate-y-20 transition-all duration-2000 delay-${100 * index} ease-[cubic-bezier(0.16,1,0.3,1)]`}
             >
               <Image
                 src={item.src}
@@ -53,10 +54,10 @@ export default function Courses() {
               {item.title && (
                 <div className="w-full flex items-end h-[220px] absolute bottom-0 z-10 gradient-blue-bg p-6">
                   <div className="w-full grid gap-4">
-                    <p className="text-white text-start text-[35px] font-bold leading-[77%]">
+                    <p className="text-white text-start md:text-[28px] text-[35px] font-bold leading-[77%]">
                       {item.title}
                     </p>
-                    <p className="geist-font text-[#CFC2FF] text-start text-[18.13px] leading-[18.08px] tracking-[-0.24px]">
+                    <p className="geist-font text-[#CFC2FF] text-start md:text-[14px] text-[18.13px] leading-[18.08px] tracking-[-0.24px]">
                       {item.description}
                     </p>
                     <button className="CalSans-re-font font-400 w-full px-6 py-2 text-[10px] md:text-[16px] rounded-[12px] text-black bg-white">
@@ -75,7 +76,7 @@ export default function Courses() {
         </div>
       </div>
       <div className="w-full grid justify-center gap-6">
-        <p className="theme-text CalSans-re-font text-[35px] md:text-[55px] lg:text-[64.19px] leading-[100%] text-center flex justify-center gap-3 font-500
+        <p className="theme-text CalSans-re-font text-[35px] md:text-[55px] lg:text-[64.19px] md:leading-[80%] leading-[100%]  text-center flex justify-center gap-3 font-500
               reveal 
               opacity-0 translate-y-20 
               transition-all duration-900 
@@ -86,7 +87,7 @@ export default function Courses() {
           {aboutImages.map((item, index) => (
             <div
               key={index}
-              className={`relative w-[309px] lg:w-[380px] h-[440px] rounded-[20px] overflow-hidden reveal opacity-0 translate-y-20 transition-all duration-2000 delay-${100 * index} ease-[cubic-bezier(0.16,1,0.3,1)]`}
+              className={`relative w-[309px] md:w-[230px] lg:w-[380px] h-[440px] rounded-[20px] overflow-hidden reveal opacity-0 translate-y-20 transition-all duration-2000 delay-${100 * index} ease-[cubic-bezier(0.16,1,0.3,1)]`}
             >
               <Image
                 src={item.src}
@@ -99,10 +100,10 @@ export default function Courses() {
               {item.title && (
                 <div className="w-full flex items-end h-[220px] absolute bottom-0 z-10 gradient-blue-bg p-6">
                   <div className="w-full grid gap-4">
-                    <p className="text-white text-start text-[35px] font-bold leading-[77%]">
+                    <p className="text-white text-start md:text-[28px] text-[35px] font-bold leading-[77%]">
                       {item.title}
                     </p>
-                    <p className="geist-font text-[#CFC2FF] text-start text-[18.13px] leading-[18.08px] tracking-[-0.24px]">
+                    <p className="geist-font text-[#CFC2FF] text-start md:text-[14px] text-[18.13px] leading-[18.08px] tracking-[-0.24px]">
                       {item.description}
                     </p>
                     <button className="CalSans-re-font font-400 w-full px-6 py-2 text-[10px] md:text-[16px] rounded-[12px] text-black bg-white">
@@ -121,7 +122,7 @@ export default function Courses() {
         </div>
       </div>
       <div className="w-full grid justify-center gap-6">
-        <p className="theme-text CalSans-re-font text-[35px] md:text-[55px] lg:text-[64.19px] leading-[100%] text-center flex justify-center gap-3 font-500
+        <p className="theme-text CalSans-re-font text-[35px] md:text-[55px] lg:text-[64.19px] md:leading-[80%] leading-[100%]  text-center flex justify-center gap-3 font-500
               reveal 
               opacity-0 translate-y-20 
               transition-all duration-900 
@@ -132,7 +133,7 @@ export default function Courses() {
           {aboutImages.map((item, index) => (
             <div
               key={index}
-              className={`relative w-[309px] lg:w-[380px] h-[440px] rounded-[20px] overflow-hidden reveal opacity-0 translate-y-20 transition-all duration-2000 delay-${100 * index} ease-[cubic-bezier(0.16,1,0.3,1)]`}
+              className={`relative w-[309px] md:w-[230px] lg:w-[380px] h-[440px] rounded-[20px] overflow-hidden reveal opacity-0 translate-y-20 transition-all duration-2000 delay-${100 * index} ease-[cubic-bezier(0.16,1,0.3,1)]`}
             >
               <Image
                 src={item.src}
@@ -145,10 +146,10 @@ export default function Courses() {
               {item.title && (
                 <div className="w-full flex items-end h-[220px] absolute bottom-0 z-10 gradient-blue-bg p-6">
                   <div className="w-full grid gap-4">
-                    <p className="text-white text-start text-[35px] font-bold leading-[77%]">
+                    <p className="text-white text-start md:text-[28px] text-[35px] font-bold leading-[77%]">
                       {item.title}
                     </p>
-                    <p className="geist-font text-[#CFC2FF] text-start text-[18.13px] leading-[18.08px] tracking-[-0.24px]">
+                    <p className="geist-font text-[#CFC2FF] text-start md:text-[14px] text-[18.13px] leading-[18.08px] tracking-[-0.24px]">
                       {item.description}
                     </p>
                     <button className="CalSans-re-font font-400 w-full px-6 py-2 text-[10px] md:text-[16px] rounded-[12px] text-black bg-white">
