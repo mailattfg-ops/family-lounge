@@ -7,14 +7,8 @@ import Image from "next/image";
 export default function Courses() {
   const aboutImages = [
     {
-      src: "/about/3.jpg",
-      title: "Zumba",
-      description:
-        "Get all saloon services including haircuts, colouring, straightening etc",
-    },
-    {
-      src: "/about/2.jpg",
-      title: "Aari Designing",
+      src: "/Courses/5.jpg",
+      title: "Beautician",
       description:
         "Get all saloon services including haircuts, colouring, straightening etc",
     },
@@ -24,6 +18,13 @@ export default function Courses() {
       description:
         "Get all saloon services including haircuts, colouring, straightening etc",
     },
+    {
+      src: "/about/2.jpg",
+      title: "Tailoring",
+      description:
+        "Get all saloon services including haircuts, colouring, straightening etc",
+    },
+    
   ];
 
   return (
@@ -69,7 +70,7 @@ export default function Courses() {
               {/* BADGE */}
               <div className="absolute grid right-0 top-0 bg-black text-white px-6 py-4 rounded-bl-[40px]">
                 <p className="text-[8px] md:text-[12px] leading-tight">Duration of Course</p>
-                <p className="text-[10px] md:text-[18px] leading-tight">3 Months</p>
+                <p className="text-[10px] md:text-[18px] leading-tight">1 Months</p>
               </div>
             </div>
           ))}
@@ -161,7 +162,7 @@ export default function Courses() {
               {/* BADGE */}
               <div className="absolute grid right-0 top-0 bg-black text-white px-6 py-4 rounded-bl-[40px]">
                 <p className="text-[8px] md:text-[12px] leading-tight">Duration of Course</p>
-                <p className="text-[10px] md:text-[18px] leading-tight">3 Months</p>
+                <p className="text-[10px] md:text-[18px] leading-tight">6 Months</p>
               </div>
             </div>
           ))}

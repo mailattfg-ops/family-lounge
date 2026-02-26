@@ -21,7 +21,11 @@ interface GalleryItem {
     description?: string;
 }
 
-
+const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY!
+);
+console.log("supabase", supabase);
 
 export default function FormWithTable() {
     const router = useRouter();
@@ -36,11 +40,7 @@ export default function FormWithTable() {
         description: "",
     });
 
-    const supabase = createClient(
-        process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY!
-    );
-    console.log("supabase", supabase);
+
 
     // 🔐 Auth Check
     useEffect(() => {
@@ -88,7 +88,7 @@ export default function FormWithTable() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setLoading(true);
-        if (!form.image || !form.alt ) {
+        if (!form.image || !form.alt) {
             alert("Image, Alt and File Name required");
             return;
         }
@@ -165,6 +165,19 @@ export default function FormWithTable() {
         router.replace("/admin/login");
     };
 
+    useEffect(() => {
+        const handlePageHide = async () => {
+            await supabase.removeAllChannels();
+        };
+
+        window.addEventListener("pagehide", handlePageHide);
+
+        return () => {
+            window.removeEventListener("pagehide", handlePageHide);
+            supabase.removeAllChannels();
+        };
+    }, []);
+
     // ✅ Safe conditional render AFTER all hooks
     if (isCheckingAuth) {
         return (
@@ -196,6 +209,9 @@ export default function FormWithTable() {
                         onSubmit={handleSubmit}
                         className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"
                     >
+                        <label htmlFor="image" className="text-black mb-1">
+                            Image
+                        </label>
                         <input
                             type="file"
                             name="image"
@@ -204,6 +220,9 @@ export default function FormWithTable() {
                             className="text-black placeholder:text-gray-400 border px-4 py-2 rounded-lg"
                         />
 
+                        <label htmlFor="alt" className="text-black mb-1">
+                            Image Alt
+                        </label>
                         <input
                             type="text"
                             name="alt"
@@ -213,6 +232,9 @@ export default function FormWithTable() {
                             className="text-black placeholder:text-gray-400 border px-4 py-2 rounded-lg"
                         />
 
+                        <label htmlFor="fileName" className="text-black mb-1">
+                            File Name
+                        </label>
                         <input
                             type="text"
                             name="fileName"
@@ -222,6 +244,9 @@ export default function FormWithTable() {
                             className="text-black placeholder:text-gray-400 border px-4 py-2 rounded-lg"
                         />
 
+                        <label htmlFor="description" className="text-black mb-1">
+                            Description
+                        </label>
                         <textarea
                             name="description"
                             value={form.description}
