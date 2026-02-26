@@ -10,19 +10,19 @@ export default function Courses() {
       src: "/Courses/5.jpg",
       title: "Beautician",
       description:
-        "Get all saloon services including haircuts, colouring, straightening etc",
+        "Learn professional makeup, advanced skincare techniques, and bridal styling from industry experts.",
     },
     {
       src: "/about/1.jpg",
       title: "Fashion Designing",
       description:
-        "Get all saloon services including haircuts, colouring, straightening etc",
+        "Master pattern making, garment construction, and contemporary design principles to launch your fashion career.",
     },
     {
       src: "/about/2.jpg",
       title: "Tailoring",
       description:
-        "Get all saloon services including haircuts, colouring, straightening etc",
+        "Acquire practical skills in bespoke tailoring, cutting, altering, and creating custom-fitted garments.",
     },
     
   ];

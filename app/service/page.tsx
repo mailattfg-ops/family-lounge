@@ -7,27 +7,27 @@ export default function Home() {
   const aboutImages = [
     {
       src: "/about/4.jpg",
-      title: "Saloon",
+      title: "Beautician",
       description:
-        "Get all saloon services including haircuts, colouring, straightening etc",
+        "Professional makeup, skincare, and bridal styling tailored to enhance your natural beauty.",
     },
     {
       src: "/about/3.jpg",
       title: "Zumba",
       description:
-        "Get all saloon services including haircuts, colouring, straightening etc",
+        "Energetic and fun dance fitness classes to help you stay active, burn calories, and feel great.",
     },
     {
       src: "/about/2.jpg",
       title: "Aari Designing",
       description:
-        "Get all saloon services including haircuts, colouring, straightening etc",
+        "Exquisite traditional hand-embroidery and intricate Aari work customized for elegant ethnic wear.",
     },
     {
       src: "/about/1.jpg",
       title: "Fashion Designing",
       description:
-        "Get all saloon services including haircuts, colouring, straightening etc",
+        "Bespoke tailoring, cutting-edge pattern making, and custom outfit designs for every occasion.",
     },
   ];
   useEffect(() => {

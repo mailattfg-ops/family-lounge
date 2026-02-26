@@ -7,6 +7,7 @@ import { createClient } from "@supabase/supabase-js";
 
 export default function Home() {
   const [gallery, setGallery] = useState<any[]>([]);
+  const [mainVideo, setMainVideo] = useState<any | null>(null);
   const [loading, setLoading] = useState(true);
   const supabase = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -19,8 +20,12 @@ export default function Home() {
       .select("*")
       .order("id", { ascending: false });
 
-    if (!error && data) setGallery(data);
-    console.log("data", data);
+    if (!error && data) {
+      const videoItem = data.find((item) => item.alt === "MAIN_SITE_VIDEO");
+      const imageItems = data.filter((item) => item.alt !== "MAIN_SITE_VIDEO");
+      setMainVideo(videoItem || null);
+      setGallery(imageItems);
+    }
     setLoading(false);
   };
 
@@ -83,7 +88,7 @@ export default function Home() {
               {Array.from({ length: 8 }).map((_, index) => (
                 <div
                   key={index}
-                  className="col-span-12 md:col-span-6 lg:col-span-3 h-[320px] rounded-[20px] shimmer"
+                  className="col-span-12 md:col-span-6 lg:col-span-3 h-[320px] rounded-[20px] bg-gray-200 animate-pulse"
                 />
               ))}
             </div>
@@ -100,19 +105,35 @@ export default function Home() {
             ease-[cubic-bezier(0.16,1,0.3,1)]">
               Gallery
             </p>
-            <div className="md:w-full grid items-center justify-center gap-6">
-              <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-6 justify-items-center px-8">
+            <div className="md:w-full grid items-center justify-center gap-6 px-4 md:px-8">
+              
+              {/* Highlighted Video Section */}
+              {mainVideo && (
+                <div className="w-full max-w-[1200px] mx-auto rounded-[20px] overflow-hidden shadow-lg reveal opacity-0 translate-y-20 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] bg-black mb-6">
+                  <video 
+                      src={mainVideo.image_url} 
+                      controls 
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      className="w-full h-auto max-h-[700px] object-cover"
+                  />
+                </div>
+              )}
+
+              <div className="w-full max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 justify-items-center">
                 {gallery.map((item, index) => (
                   <div
                     key={index}
-                    className={`relative w-full h-[320px] flex justify-center rounded-[20px] overflow-hidden reveal opacity-0 translate-y-20 transition-all duration-[2000ms] delay-[${100 * index}ms] ease-[cubic-bezier(0.16,1,0.3,1)]`}
+                    className={`relative w-[257px] h-[320px] flex justify-center mx-auto rounded-[20px] overflow-hidden reveal opacity-0 translate-y-20 transition-all duration-[2000ms] delay-[${100 * index}ms] ease-[cubic-bezier(0.16,1,0.3,1)]`}
                   >
                     <Image
                       src={item.image_url || ""}
                       alt={item.alt || ""}
-                      width={694}
-                      height={700}
-                      className="w-[257.117919921875px] h-[324.1921691894531px] object-cover"
+                      width={257}
+                      height={320}
+                      className="w-full h-full object-cover object-center"
                       priority
                     />
                   </div>

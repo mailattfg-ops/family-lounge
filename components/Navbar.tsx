@@ -34,14 +34,14 @@ export default function Navbar() {
             className={`flex justify-center transition-all duration-500 overflow-hidden ${hideLogo ? "h-0 opacity-0" : "h-auto opacity-100"
               }`}
           >
-            <Link href="/" className={linkClass("/home")}>
+            <Link href="/" className="relative px-2 py-1 flex items-center justify-center">
               <Image
-                src="/logo-dark.png"
+                src="/logo.png"
                 alt="Logo"
-                width={212.01889038085938}
-                height={95.01768493652344}
+                width={212}
+                height={95}
                 priority
-                className="w-[130px] md:w-fit h-auto object-contain"
+                className="w-[140px] md:w-[212px] h-auto object-contain"
               />
             </Link>
 

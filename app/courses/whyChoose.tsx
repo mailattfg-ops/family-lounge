@@ -1,31 +1,25 @@
 import Image from "next/image";
 
 export default function WhyChoose() {
-  const services = [
-    { title: "Hair Colouring", image: "/about/1.jpg" },
-    { title: "Facial", image: "/about/1.jpg" },
-    { title: "Hair Cutting", image: "/about/1.jpg" },
-    { title: "Styling Services", image: "/about/1.jpg" },
-  ];
   const testimonials = [
     {
       id: 1,
-      text: `"Working with this team has truly pushed our company to improve. Their tailored solutions have made a significant difference in our operations!"`,
-      name: "Jake Harrison",
+      text: `"The Beautician course completely transformed my career. The hands-on training with actual clients gave me the confidence to start my own bridal makeup studio!"`,
+      name: "Aisha Rahman",
       image: "/Courses/user.jpg",
     },
     {
       id: 2,
-      text: `"Working with this team has truly pushed our company to improve. Their tailored solutions have made a significant difference in our operations!"`,
-      name: "Jake Harrison",
+      text: `"I had zero experience when I joined the Fashion Designing batch. In just 3 months, I learned how to draft patterns and sew my own custom outfits perfectly."`,
+      name: "Neha Sharma",
       image: "/Courses/user.jpg",
     },
     {
       id: 3,
-      text: `"Working with this team has truly pushed our company to improve. Their tailored solutions have made a significant difference in our operations!"`,
-      name: "Jake Harrison",
+      text: `"The intricate Aari embroidery classes are phenomenal. The instructors here are patient and skilled. I now take custom tailoring orders from home!"`,
+      name: "Priya Menon",
       image: "/Courses/user.jpg",
-    },
+    }
   ];
   return (
     <>

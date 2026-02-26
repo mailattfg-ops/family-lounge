@@ -36,7 +36,7 @@ export default function Home() {
             transition-all duration-900 
             ease-[cubic-bezier(0.16,1,0.3,1)]">
             <span className="w-[18px] h-[18px] rounded-full theme-bg inline-block"></span>
-            Our Services
+            Our Courses
           </p>
           <Courses />
         </div>

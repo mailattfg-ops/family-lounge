@@ -29,8 +29,6 @@ export default function Home() {
     <div className="flex min-h-screen items-center justify-center font-sans bg-[#f6f6f6]">
       <main className="flex min-h-screen w-full flex-col px-0 sm:items-start gap-6">
         <div className="relative w-full grid place-items-center text-center gap-10 pt-35 md:pt-4">
-          
-
           <div className="relative z-10 w-full grid gap-0 pt-10 md:pt-65">
             <p className="theme-text text-[14.85px] md:text-[19px] lg:text-[24px] reveal 
               opacity-0 translate-y-20 

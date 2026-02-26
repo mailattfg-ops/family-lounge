@@ -31,10 +31,12 @@ export default function LayoutWrapper({
   }, []);
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      {children}
+      <main className="flex-grow">
+        {children}
+      </main>
       {pageLoaded && <Footer />}
-    </>
+    </div>
   );
 }
