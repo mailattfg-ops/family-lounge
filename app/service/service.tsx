@@ -9,7 +9,7 @@ export default function Service() {
   ];
 
   const tailoringServices = [
-    { title: "Custom Tailoring", image: "/service/tailor.jpg" },
+    { title: "Custom Tailoring", image: "/tailoring/sewing.jpg" },
     { title: "Aari Embroidery", image: "/service/tailor.jpg" },
     { title: "Dress Alterations", image: "/service/tailor.jpg" },
     { title: "Bridal Wear Design", image: "/service/tailor.jpg" },
@@ -24,8 +24,8 @@ export default function Service() {
   ];
 
   const zumbaServices = [
-    { title: "Aerobics", image: "/about/yoga.jpg" },
-    { title: "Zumba", image: "/about/yoga.jpg" },
+    { title: "Aerobics", image: "/yoga/fitness.jpg" },
+    { title: "Zumba", image: "/about/zoomba.jpg" },
     { title: "Yoga", image: "/about/yoga.jpg" },
   ];
 
@@ -252,7 +252,7 @@ export default function Service() {
         <div className="w-full md:pt-[25px] grid md:flex items-center justify-center gap-6 px-2 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-300 ease-[cubic-bezier(0.16,1,0.3,1)]">
           <div className="w-full lg:w-[1300px] h-fit md:h-[700px] overflow-hidden rounded-[20px]">
             <Image
-              src="/about/zoomba.jpg"
+              src="/yoga/group.jpg"
               alt="zumba banner"
               width={1444}
               height={800}

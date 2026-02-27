@@ -53,7 +53,7 @@ const CourseCard = ({ item, duration, index }: { item: CourseItem; duration: str
                 </p>
                 <button 
                   onClick={() => setIsFlipped(true)}
-                  className="CalSans-re-font font-400 w-full px-6 py-2 text-[10px] md:text-[16px] rounded-[12px] text-black bg-white hover:bg-gray-200 transition-colors"
+                  className="CalSans-re-font font-400 w-full px-6 py-2 text-[10px] md:text-[16px] rounded-[12px] text-black bg-white hover:bg-gray-200 transition-colors cursor-pointer"
                 >
                   Read More
                 </button>

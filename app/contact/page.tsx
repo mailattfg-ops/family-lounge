@@ -26,7 +26,7 @@ export default function Home() {
   }, []); // 👈 IMPORTANT
   return (
     <div className="flex flex-col items-center justify-center font-sans bg-[#f6f6f6] pt-[150px] md:pt-[180px]">
-      <main className="flex w-full max-w-[1250px] mx-auto flex-col px-4 md:px-0 py-[20px] md:py-[40px] ">
+      <main className="flex w-full mx-auto flex-col px-4 md:px-0 py-[20px] md:py-[40px] ">
         
         {/* Contact Page Header Section */}
         <div className="w-full text-center grid gap-6 mb-12 reveal opacity-0 translate-y-20 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]">
@@ -40,7 +40,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 mt-6">
              <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 max-w-[300px]">
                 <h3 className="text-xl font-bold text-black mb-2">Our Location</h3>
-                <p className="text-[#6D6D6D] text-sm">Office 210, Al Serkal Avenue, Al Quoz Industrial Area 1, Dubai, UAE</p>
+                <p className="text-[#6D6D6D] text-sm">Beauty World, <br></br>Krishnathulasi Arcade, <br></br>kulanada</p>
              </div>
              <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 max-w-[300px]">
                 <h3 className="text-xl font-bold text-black mb-2">Call Us</h3>

@@ -157,6 +157,10 @@ body {
   animation: leafLeft 6s ease-in-out infinite;
 }
 
+button {
+  cursor: pointer !important;
+}
+
 /* .leaf-right {
   animation: leafRight 6s ease-in-out infinite;
 } */

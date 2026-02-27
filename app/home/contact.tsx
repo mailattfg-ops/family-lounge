@@ -62,10 +62,10 @@ export default function Contact() {
                         />
                     </div>
                     <div className="absolute w-full bottom-0 gradient-blue-bg left-0 pl-5 pb-5 md:pl-6 md:pb-6 lg:pl-10 lg:pb-10 grid gap-4 rounded-b-[20px]">
-                        <p className="w-fit lg:w-[529.8389892578125px] CalSans-re-font font-normal text-[34px] md:text-[35px] lg:text-[65.84px] text-left leading-[1.03] tracking-normal">
+                        <p className="w-fit text-white lg:w-[529.8389892578125px] CalSans-re-font font-normal text-[34px] md:text-[35px] lg:text-[65.84px] text-left leading-[1.03] tracking-normal">
                             Discover your potential with us!
                         </p>
-                        <p className="geist-font text-start text-[14px] md:text-[24.69px] leading-[18.08px] tracking-[-0.24px]">Learn skills that take you up in the world</p>
+                        <p className="geist-font text-white text-start text-[14px] md:text-[24.69px] leading-[18.08px] tracking-[-0.24px]">Learn skills that take you up in the world</p>
                     </div>
                 </div>
                 <div className="w-full h-full md:w-4/10  grid items-center justify-center gap-6">
