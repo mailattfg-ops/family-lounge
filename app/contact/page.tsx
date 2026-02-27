@@ -40,7 +40,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 mt-6">
              <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 max-w-[300px]">
                 <h3 className="text-xl font-bold text-black mb-2">Our Location</h3>
-                <p className="text-[#6D6D6D] text-sm">Beauty World, <br></br>Krishnathulasi Arcade, <br></br>kulanada</p>
+                <p className="text-[#6D6D6D] text-sm">Beauty World, Krishnathulasi Arcade, kulanada</p>
              </div>
              <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 max-w-[300px]">
                 <h3 className="text-xl font-bold text-black mb-2">Call Us</h3>

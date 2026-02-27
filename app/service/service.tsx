@@ -2,31 +2,31 @@ import Image from "next/image";
 
 export default function Service() {
   const saloonServices = [
-    { title: "Hair Colouring", image: "/about/4.jpg" },
-    { title: "Facial", image: "/about/4.jpg" },
-    { title: "Hair Cutting", image: "/about/4.jpg" },
-    { title: "Styling Services", image: "/about/4.jpg" },
+    { title: "Hair Colouring", image: "/service-items/hair-colouring.jpg" },
+    { title: "Facial", image: "/service-items/facial.jpg" },
+    { title: "Hair Cutting", image: "/service-items/hair-cutting.jpg" },
+    { title: "Styling Services", image: "/service-items/styling.jpg" },
   ];
 
   const tailoringServices = [
-    { title: "Custom Tailoring", image: "/tailoring/sewing.jpg" },
-    { title: "Aari Embroidery", image: "/service/tailor.jpg" },
-    { title: "Dress Alterations", image: "/service/tailor.jpg" },
-    { title: "Bridal Wear Design", image: "/service/tailor.jpg" },
+    { title: "Custom Tailoring", image: "/service-items/tailoring.jpg" },
+    { title: "Aari Embroidery", image: "/service-items/embroidery.jpg" },
+    { title: "Dress Alterations", image: "/service-items/alterations.jpg" },
+    { title: "Bridal Wear Design", image: "/service-items/bridal-wear.jpg" },
   ];
   const beauticianServices = [
-    { title: "Bridal Makeup", image: "/about/beauty.jpg" },
-    { title: "Skincare Treatments", image: "/about/beauty.jpg" },
-    { title: "Party Makeup", image: "/about/beauty.jpg" },
-    { title: "Threading & Waxing", image: "/about/beauty.jpg" },
-    { title: "Pedicure & Manicure", image: "/about/beauty.jpg" },
-    { title: "Hair Spa", image: "/about/beauty.jpg" },
+    { title: "Bridal Makeup", image: "/service-items/bridal-makeup.jpg" },
+    { title: "Skincare Treatments", image: "/service-items/skincare.jpg" },
+    { title: "Party Makeup", image: "/service-items/party-makeup.jpg" },
+    { title: "Threading & Waxing", image: "/service-items/waxing.jpg" },
+    { title: "Pedicure & Manicure", image: "/service-items/manicure.jpg" },
+    { title: "Hair Spa", image: "/service-items/hair-spa.jpg" },
   ];
 
   const zumbaServices = [
-    { title: "Aerobics", image: "/yoga/fitness.jpg" },
-    { title: "Zumba", image: "/about/zoomba.jpg" },
-    { title: "Yoga", image: "/about/yoga.jpg" },
+    { title: "Aerobics", image: "/service-items/aerobics.jpg" },
+    { title: "Zumba", image: "/service-items/zumba.jpg" },
+    { title: "Yoga", image: "/service-items/yoga.jpg" },
   ];
 
   return (
