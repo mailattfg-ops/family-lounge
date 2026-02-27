@@ -33,7 +33,7 @@ export default function Contact() {
         const message = `New Enquiry
             Name: ${name}
             Phone: ${phone}
-            Services: ${services.length ? services.join(", ") : "Not selected"}`;
+            ${services.length ? "Services: " + services.join(", ") : ""}`;
 
         // ⚠️ IMPORTANT: Must include country code for wa.me
         const whatsappNumber = "919495388624";
@@ -53,7 +53,7 @@ export default function Contact() {
                 <div className="relative w-full md:w-6/10 grid md:flex items-center justify-center gap-6">
                     <div className="w-full h-fit md:w-[917px] md:h-fit overflow-hidden rounded-[20px]">
                         <Image
-                            src="/banner/bann2.svg"
+                            src="/banner/contact1.jpg"
                             alt="banner"
                             width={917}
                             height={766} // use original image ratio
@@ -61,7 +61,7 @@ export default function Contact() {
                             className="w-full h-full"
                         />
                     </div>
-                    <div className="absolute bottom-2 left-2 pl-5 pb-5 md:pl-6 md:pb-6 lg:pl-10 lg:pb-10 grid gap-4">
+                    <div className="absolute w-full bottom-0 gradient-blue-bg left-0 pl-5 pb-5 md:pl-6 md:pb-6 lg:pl-10 lg:pb-10 grid gap-4 rounded-b-[20px]">
                         <p className="w-fit lg:w-[529.8389892578125px] CalSans-re-font font-normal text-[34px] md:text-[35px] lg:text-[65.84px] text-left leading-[1.03] tracking-normal">
                             Discover your potential with us!
                         </p>
@@ -97,34 +97,34 @@ export default function Contact() {
                             </div>
                             <div className="w-full lg:w-1/2 grid justify-start pt-6 md:gap-2 gap-4">
                                 <label className="w-full text-left text-black font-600">Service you are looking for </label>
-                                <div className="sm:w-full flex justify-start gap-4 pl-6">
+                                <label className="sm:w-full flex justify-start gap-4 pl-6 cursor-pointer">
                                     <input
                                         type="checkbox" name="service" value="Tailoring"
                                         className="text-black border border-[#1717171A] w-5 h-5 rounded"
                                     />
-                                    <p className="text-black font-400 CalSans-re-font">Tailoring</p>
-                                </div>
-                                <div className="sm:w-full flex justify-start gap-4 pl-6">
+                                    <span className="text-black font-400 CalSans-re-font">Tailoring</span>
+                                </label>
+                                <label className="sm:w-full flex justify-start gap-4 pl-6 cursor-pointer">
                                     <input
                                         type="checkbox" name="service" value="Beautician"
                                         className="text-black border border-[#1717171A] w-5 h-5 rounded"
                                     />
-                                    <p className="text-black font-400 CalSans-re-font">Beautician</p>
-                                </div>
-                                <div className="sm:w-full flex justify-start gap-4 pl-6">
+                                    <span className="text-black font-400 CalSans-re-font">Beautician</span>
+                                </label>
+                                <label className="sm:w-full flex justify-start gap-4 pl-6 cursor-pointer">
                                     <input
                                         type="checkbox" name="service" value="Aari Design"
                                         className="text-black border border-[#1717171A] w-5 h-5 rounded"
                                     />
-                                    <p className="text-black font-400 CalSans-re-font">Aari design</p>
-                                </div>
-                                <div className="sm:w-full flex justify-start gap-4 pl-6">
+                                    <span className="text-black font-400 CalSans-re-font">Aari design</span>
+                                </label>
+                                <label className="sm:w-full flex justify-start gap-4 pl-6 cursor-pointer">
                                     <input
                                         type="checkbox" name="service" value="Salon Services"
                                         className="text-black border border-[#1717171A] w-5 h-5 rounded"
                                     />
-                                    <p className="text-black font-400 CalSans-re-font">Salon Services</p>
-                                </div>
+                                    <span className="text-black font-400 CalSans-re-font">Salon Services</span>
+                                </label>
 
                             </div>
                             <button type="submit" className="w-full bg-black text-white px-6 py-2 text-[15px] md:text-[20px] rounded-[12px] mt-10 ">

@@ -25,26 +25,31 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.theme-text{
+.theme-text {
   color: #3D1FA8;
 }
 
-.text-6D6D6D{
+.theme-textsub {
+  color: #3700ff;
+}
+
+.text-6D6D6D {
   color: #6D6D6D;
 }
 
-.theme-bg{
+.theme-bg {
   background-color: #3D1FA8;
 }
 
-.gradient-blue-bg{
+.gradient-blue-bg {
   background: linear-gradient(180deg, rgba(61, 31, 168, 0) 0%, rgba(61, 31, 168, 0.7) 30.29%, #3D1FA8 100%);
 }
 
 @font-face {
   font-family: "Awesome Serif";
   src: url("/fonts/Awesome-Serif-VAR-VF.woff2") format("woff2");
-  font-weight: 100 900; /* variable font */
+  font-weight: 100 900;
+  /* variable font */
   font-style: normal;
   font-display: swap;
 }
@@ -118,18 +123,24 @@ body {
 }
 
 @keyframes leafLeft {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px) rotate(-0.5deg) scaleX(-1);
   }
+
   50% {
     transform: translateY(-15px) rotate(1deg) scaleX(-1);
   }
 }
 
 @keyframes leafRight {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: rotate(1deg);
   }
+
   50% {
     transform: rotate(-0.5deg);
   }

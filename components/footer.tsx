@@ -37,7 +37,7 @@ export default function Footer() {
                 {/* Brand Section */}
                 <div className="w-full lg:w-1/3 flex justify-center lg:justify-start">
                     <Image
-                        src="/logo-dark.png"
+                        src="/logo.png"
                         alt="BeautyWorld Logo"
                         width={1444}
                         height={800} // use original image ratio
@@ -53,7 +53,7 @@ export default function Footer() {
                     <div className="flex flex-col items-center sm:items-start max-w-[300px]">
                         <h3 className="text-lg font-bold mb-3 text-gray-900">Address</h3>
                         <p className="text-[#4a4a4a] text-sm mb-5 leading-relaxed">
-                            Office 210, Al Serkal Avenue, Al Quoz Industrial Area 1, Dubai, United Arab Emirates
+                            Beauty World, <br></br>Krishnathulasi Arcade, <br></br>kulanada
                         </p>
                         
                         <h3 className="text-lg font-bold mb-3 text-gray-900">Phone</h3>

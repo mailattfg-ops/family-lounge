@@ -36,7 +36,7 @@ export default function Navbar() {
           >
             <Link href="/" className="relative px-2 py-1 flex items-center justify-center">
               <Image
-                src="/logo.png"
+                src="/bw-logo.png"
                 alt="Logo"
                 width={212}
                 height={95}
