@@ -4,8 +4,18 @@ import { useEffect, useState } from "react";
 import Contact from "../home/contact";
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
+    const checkTime = () => {
+      const hours = new Date().getHours();
+      setIsOpen(hours >= 9 && hours < 21);
+    };
+    checkTime();
+    const intervalId = setInterval(checkTime, 60000);
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -22,7 +32,10 @@ export default function Home() {
 
     elements.forEach((el) => observer.observe(el));
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      clearInterval(intervalId);
+    };
   }, []); // 👈 IMPORTANT
   return (
     <div className="flex flex-col items-center justify-center font-sans bg-[#f6f6f6] pt-[150px] md:pt-[180px]">
@@ -53,7 +66,16 @@ export default function Home() {
              </div>
              <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 max-w-[300px] w-full text-center md:text-left h-full">
                 <h3 className="text-xl font-bold text-black mb-2">Business Hours</h3>
-                <p className="text-[#6D6D6D] text-sm">Open <br/> Monday to Sunday <br/> 9:00 AM to 9:00 PM</p>
+                <p className="text-[#6D6D6D] text-sm">
+                  {isMounted ? (
+                    <span className={`font-semibold ${isOpen ? "text-green-600" : "text-red-500"}`}>
+                      {isOpen ? "Open Now" : "Currently Closed"}
+                    </span>
+                  ) : (
+                    <span className="opacity-0">Loading...</span>
+                  )}
+                  <br/> Monday to Sunday <br/> 9:00 AM to 9:00 PM
+                </p>
              </div>
           </div>
         </div>
