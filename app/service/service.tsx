@@ -6,6 +6,7 @@ export default function Service() {
     { title: "Facial", image: "/service-items/facial.jpg" },
     { title: "Hair Cutting", image: "/service-items/hair-cutting.jpg" },
     { title: "Styling Services", image: "/service-items/styling.jpg" },
+    { title: "Hydra Facial", image: "/service-items/facial.jpg" },
   ];
 
   const tailoringServices = [
