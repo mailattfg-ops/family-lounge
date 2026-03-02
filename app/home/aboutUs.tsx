@@ -35,14 +35,14 @@ export default function AboutUs() {
           About Us
         </p>
         <div>
-          <p className="w-[300px] md:w-[600px] lg:w-[1360px] text-[#6D6D6D] items-center text-[20px] lg:text-[40px] leading-[124%] tracking-[-1.6px] geist-font font-500 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-100 ease-[cubic-bezier(0.16,1,0.3,1)]">
-            <span className="theme-text">
-              At Family Lounge, we're more than just a lounge.&nbsp;
+          <p className="w-[300px] md:w-[600px] lg:w-[1360px] text-[#6D6D6D] items-center text-[20px] lg:text-[25px] leading-[1.6] tracking-[-0.5px] geist-font font-500 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-100 ease-[cubic-bezier(0.16,1,0.3,1)]">
+            <span className="theme-text font-bold">
+              Beauty World Family Lounge&nbsp;
             </span>
-            We're a community hub offering salon services, fashion design classes, zumba, tailoring, and aari design work.&nbsp;
-            <span className="theme-text">
-              Discover your potential with us!
-            </span>
+            is a premium beauty, wellness, and training destination offering professional salon services and career-oriented beauty education under one roof. We provide government-certified beautician courses, along with fashion designing, tailoring, and Zumba classes, designed to help students build practical skills, industry confidence, and long-term career opportunities in the beauty and fashion industry.
+          </p>
+          <p className="w-[300px] md:w-[600px] lg:w-[1360px] mt-4 text-[#6D6D6D] items-center text-[20px] lg:text-[25px] leading-[1.6] tracking-[-0.5px] geist-font font-500 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-200 ease-[cubic-bezier(0.16,1,0.3,1)]">
+            Our fully equipped salon delivers expert hair, skin, bridal, and in-house makeup services using modern techniques and quality products. With real-time salon exposure, personalized care, and professional trainers, Beauty World Family Lounge stands as a trusted choice for those seeking beauty services, certified courses, and holistic wellness training.
           </p>
         </div>
         <div className="w-full grid grid-cols-2 md:flex justify-center items-center gap-4 px-4 md:px-10 reveal opacity-0 translate-y-20 transition-all duration-1000 delay-200 ease-[cubic-bezier(0.16,1,0.3,1)]">
