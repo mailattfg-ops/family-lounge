@@ -6,6 +6,8 @@ import WhyChoose from "./whyChoose";
 import Contact from "../home/contact";
 import Courses from "./courses";
 
+// import Diplomas from "./diplomas";
+
 export default function Home() {
   
   useEffect(() => {

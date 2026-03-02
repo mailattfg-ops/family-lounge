@@ -47,13 +47,16 @@ export default function Footer() {
                 </div>
 
                 {/* Right side content */}
-                <div className="w-full lg:w-2/3 flex flex-col sm:flex-row items-center sm:items-start justify-center lg:justify-end gap-12 md:gap-16 lg:gap-24 Inter-re-font text-center sm:text-left">
+                <div className="w-full lg:w-2/3 flex flex-col sm:flex-row items-center sm:items-start justify-center lg:justify-end gap-12 md:gap-12 lg:gap-16 Inter-re-font text-center sm:text-left">
 
                     {/* Contact */}
                     <div className="flex flex-col items-center sm:items-start max-w-[300px]">
                         <h3 className="text-lg font-bold mb-3 text-gray-900">Address</h3>
                         <p className="text-[#4a4a4a] text-sm mb-5 leading-relaxed">
-                            Beauty World, <br></br>Krishnathulasi Arcade, <br></br>kulanada
+                            Beauty World Family Lounge, <br />
+                            Krishnathulasi Arcade, <br />
+                            Kulanada, Pathanamthitta, <br />
+                            Kerala – 689503, India
                         </p>
                         
                         <h3 className="text-lg font-bold mb-3 text-gray-900">Phone</h3>
@@ -82,8 +85,33 @@ export default function Footer() {
                             <Link href="/contact" className="text-sm font-medium text-[#4a4a4a] hover:text-black transition-colors cursor-pointer">Contact</Link>
                         </div>
                     </div>
+
+                    {/* Map */}
+                    <div className="flex flex-col items-center sm:items-start">
+                        <h3 className="text-lg font-bold mb-5 text-gray-900">Find Us Here</h3>
+                        <div className="w-full flex justify-center sm:justify-start">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d246.12643829013797!2d76.67224463671388!3d9.242239759497537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1772424883998!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="200" 
+                                style={{ border: 0 }} 
+                                allowFullScreen 
+                                loading="lazy" 
+                                referrerPolicy="no-referrer-when-downgrade"
+                                className="rounded-xl shadow-md w-[280px] md:w-[250px] lg:w-[280px]"
+                            ></iframe>
+                        </div>
+                    </div>
                 </div>
 
+            </div>
+
+            {/* Copyright & Branding Footer Bottom */}
+            <div className="max-w-7xl mx-auto w-full px-6 md:px-10 mt-12 pt-6 border-t border-gray-200">
+                <div className="flex flex-col md:flex-row justify-between items-center text-sm text-[#4a4a4a] text-center md:text-left gap-4">
+                    <p>© 2026 Beauty World Family Lounge. All Rights Reserved.</p>
+                    <p>Designed by <span className="font-semibold text-gray-900">Think Forge Global LLP</span></p>
+                </div>
             </div>
         </footer>
     );

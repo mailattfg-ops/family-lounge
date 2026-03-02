@@ -4,21 +4,29 @@ export default function WhyChoose() {
   const testimonials = [
     {
       id: 1,
-      text: `"The Beautician course completely transformed my career. The hands-on training with actual clients gave me the confidence to start my own bridal makeup studio!"`,
-      name: "Aisha Rahman",
-      image: "/Courses/user.jpg",
+      text: `" I successfully completed a six-month Beautician course at Kulanada Beautiful World Academy. The academy provided excellent guidance, continuous support, and a friendly learning environment.
+      The trainers clearly and professionally taught saree draping and other beauty techniques, making the learning process easy and enjoyable. I am truly grateful for the skills and confidence I gained during this course."`,
+      name: "Athulya",
+      image: "/testimonials/1.jpeg",
     },
     {
       id: 2,
-      text: `"I had zero experience when I joined the Fashion Designing batch. In just 3 months, I learned how to draft patterns and sew my own custom outfits perfectly."`,
-      name: "Neha Sharma",
-      image: "/Courses/user.jpg",
+      text: `"I completed a one-year Beautician course at Beauty World, specializing in Nail Art. The course was well-structured and covered both basic and advanced techniques. Our trainer, Mrs. Suma, was very supportive and explained everything clearly, making it easy to learn. 
+      I gained hands-on experience in various nail art designs, tool usage, hygiene practices, and client handling. This training improved my skills and confidence to pursue a career in the beauty industry. I am truly grateful to Ms. Suma for her guidance and support."`,
+      name: "Surya Suresh",
+      image: "/testimonials/2.jpeg",
     },
     {
       id: 3,
-      text: `"The intricate Aari embroidery classes are phenomenal. The instructors here are patient and skilled. I now take custom tailoring orders from home!"`,
+      text: `"I studied the beautician course and graduated from the Beauty World Parlor in Kulanada, Pandalam. It changed my life. After completing this course, I got a job and am currently working in Bahrain. My Miss Suma, who taught me, was beyond words. She taught me everything. I have to say thank you very much."`,
       name: "Priya Menon",
-      image: "/Courses/user.jpg",
+      image: "/testimonials/3.jpeg",
+    },
+    {
+      id: 4,
+      text: `"I studied at kulanada,Pandalam beauty world 6 years ago .I currently run a beauty salon in Dubai .My business life is going very happily."`,
+      name: "Anjali",
+      image: "/testimonials/4.jpeg",
     }
   ];
   return (
@@ -80,21 +88,21 @@ export default function WhyChoose() {
           <span className="w-[18px] md:w-[16px] h-[14px] md:h-[16px] rounded-full theme-bg inline-block"></span>
           What our students have to say
         </p>
-        <div className="w-full grid lg:flex items-center justify-center gap-10">
+        <div className="w-full flex flex-wrap items-center justify-center gap-6 md:gap-10">
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="w-[330px] md:w-[400px] h-[483px] bg-[#F7F8FC] border border-[#A7A7A7] rounded-[17px] pt-[55px] px-[30px] grid
+              className="w-[330px] lg:w-[300px] xl:w-[330px] h-[483px] bg-[#F7F8FC] border border-[#A7A7A7] rounded-[17px] pt-[55px] pb-[30px] px-[20px] md:px-[30px] flex flex-col
               reveal 
               opacity-0 translate-y-20 
               transition-all duration-900 
               ease-[cubic-bezier(0.16,1,0.3,1)]"
             >
-              <p className="Grotesk-font font-normal text-[20px] md:text-[28px] leading-[32px] text-center text-[#070708]">
+              <p className="Grotesk-font font-normal text-[14px] md:text-[16px] leading-[100%] text-center text-[#070708]">
                 {item.text}
               </p>
 
-              <div>
+              <div className="mt-auto">
                 <Image
                   src={item.image}
                   alt="testimonial"

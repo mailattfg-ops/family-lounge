@@ -38,13 +38,22 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 mt-6">
-             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 max-w-[300px]">
+             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 max-w-[300px] w-full text-center md:text-left h-full">
                 <h3 className="text-xl font-bold text-black mb-2">Our Location</h3>
-                <p className="text-[#6D6D6D] text-sm">Beauty World, Krishnathulasi Arcade, kulanada</p>
+                <p className="text-[#6D6D6D] text-sm">
+                  Beauty World Family Lounge,<br />
+                  Krishnathulasi Arcade,<br />
+                  Kulanada, Pathanamthitta,<br />
+                  Kerala – 689503, India
+                </p>
              </div>
-             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 max-w-[300px]">
+             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 max-w-[300px] w-full text-center md:text-left h-full">
                 <h3 className="text-xl font-bold text-black mb-2">Call Us</h3>
                 <p className="text-[#6D6D6D] text-sm">+91 628 2057 622 <br/> +91 949 5388 624</p>
+             </div>
+             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 max-w-[300px] w-full text-center md:text-left h-full">
+                <h3 className="text-xl font-bold text-black mb-2">Business Hours</h3>
+                <p className="text-[#6D6D6D] text-sm">Open <br/> Monday to Sunday <br/> 9:00 AM to 9:00 PM</p>
              </div>
           </div>
         </div>
