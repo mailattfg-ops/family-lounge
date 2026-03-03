@@ -61,8 +61,8 @@ export default function Footer() {
                         
                         <h3 className="text-lg font-bold mb-3 text-gray-900">Phone</h3>
                         <ul className="space-y-1 text-[#4a4a4a] text-sm mb-6">
-                            <li>+91 628 2057 622</li>
                             <li>+91 949 5388 624</li>
+                            <li>+91 628 2057 622</li>
                         </ul>
                         
                         <div className="flex gap-4">

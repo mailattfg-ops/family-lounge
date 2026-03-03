@@ -62,7 +62,7 @@ export default function Home() {
              </div>
              <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 max-w-[300px] w-full text-center md:text-left h-full">
                 <h3 className="text-xl font-bold text-black mb-2">Call Us</h3>
-                <p className="text-[#6D6D6D] text-sm">+91 628 2057 622 <br/> +91 949 5388 624</p>
+                <p className="text-[#6D6D6D] text-sm"> +91 949 5388 624 <br/> +91 628 2057 622 </p>
              </div>
              <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 max-w-[300px] w-full text-center md:text-left h-full">
                 <h3 className="text-xl font-bold text-black mb-2">Business Hours</h3>
