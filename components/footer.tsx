@@ -35,7 +35,7 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto w-full px-6 md:px-10 flex flex-col lg:flex-row gap-12 lg:gap-10 justify-between items-center lg:items-start">
 
                 {/* Brand Section */}
-                <div className="w-full lg:w-1/3 flex justify-center lg:justify-start">
+                <div className="w-full lg:w-1/3 flex flex-col items-center lg:items-start text-center lg:text-left">
                     <Image
                         src="/logo.png"
                         alt="BeautyWorld Logo"
@@ -44,6 +44,9 @@ export default function Footer() {
                         priority
                         className="w-full max-w-[280px] md:max-w-[360px] h-auto object-contain"
                     />
+                    <p className="mt-2 text-[#4a4a4a] text-sm leading-relaxed max-w-[280px] md:max-w-[360px]">
+                        Unlock your potential with our professional beautician courses. Gain hands-on experience and expert guidance to build a successful career in the beauty industry.
+                    </p>
                 </div>
 
                 {/* Right side content */}

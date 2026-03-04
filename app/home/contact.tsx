@@ -53,7 +53,7 @@ export default function Contact() {
                 <div className="relative w-full md:w-6/10 grid md:flex items-center justify-center gap-6">
                     <div className="w-full h-fit md:w-[917px] md:h-fit overflow-hidden rounded-[20px]">
                         <Image
-                            src="/banner/contact1.jpg"
+                            src="/banner/contact3.jpg"
                             alt="banner"
                             width={917}
                             height={766} // use original image ratio
@@ -82,7 +82,7 @@ export default function Contact() {
                                     <label className="w-full text-left text-black font-600">Your Name</label>
                                     <input type="text"
                                         name="name"
-                                        placeholder="Michael"
+                                        placeholder="Enter your name"
                                         className="w-full text-black placeholder:text-grey border border-[#1717171A] p-4 rounded-[16.5px]"
                                     />
                                 </div>
@@ -90,7 +90,7 @@ export default function Contact() {
                                     <label className="w-full text-left text-black font-600">Phone Number</label>
                                     <input type="text"
                                         name="phone"
-                                        placeholder="726929669826"
+                                        placeholder="Enter your phone number"
                                         className="w-full text-black placeholder:text-grey border border-[#1717171A] p-4 rounded-[16.5px]"
                                     />
                                 </div>
