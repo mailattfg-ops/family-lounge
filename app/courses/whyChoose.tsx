@@ -77,7 +77,7 @@ const ButtonGroup = ({ next, previous }: any) => {
 
 export default function WhyChoose() {
   return (
-    <div className="w-full grid place-items-center text-center md:py-20 gap-10">
+    <div className="w-full grid place-items-center text-center md:py-10 gap-10">
       <p className="text-black text-[26px] md:text-[32px]">
         What our students have to say
       </p>
