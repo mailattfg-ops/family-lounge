@@ -36,6 +36,12 @@ const testimonials = [
     name: "Shilpa satheesan",
     image: "/testimonials/5.jpeg",
   },
+  {
+    id: 6,
+    text: `"Joining Beauty World Academy was a life-changing experience. The course provided me with the modern techniques and confidence I needed to work independently. Today, I am proud to successfully run my own salon, Golden Flower Beauty Clinic. I highly recommend this course to anyone aspiring to build a career in the beauty industry."`,
+    name: "Siji Mathew",
+    image: "/testimonials/6.jpeg",
+  },
 ];
 
 const responsive = {
