@@ -113,7 +113,7 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto w-full px-6 md:px-10 mt-12 pt-6 border-t border-gray-200">
                 <div className="flex flex-col md:flex-row justify-between items-center text-sm text-[#4a4a4a] text-center md:text-left gap-4">
                     <p>© 2026 Beauty World Family Lounge. All Rights Reserved.</p>
-                    <p>Designed by <span className="font-semibold text-gray-900">Think Forge Global LLP</span></p>
+                    <p>Designed by <Link href="https://www.thinkforgeglobal.com/" target="_blank" className="font-semibold text-gray-900 hover:underline">Think Forge Global LLP</Link></p>
                 </div>
             </div>
         </footer>
