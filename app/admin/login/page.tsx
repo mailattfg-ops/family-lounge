@@ -8,8 +8,8 @@ import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
   const [form, setForm] = useState({
-    email: "admin",
-    password: "password",
+    email: "",
+    password: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -19,11 +19,9 @@ export default function LoginPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Login Data:", form);
-    if (form.email === "admin" && form.password === "password") {
-      if (form.email === "admin" && form.password === "password") {
+    if (form.email === "admin" && form.password === "pass@1234567890") {
         Cookies.set("adminAuth", "true", { expires: 1 }); // 1 day
         router.push("/admin/gallery");
-      }
     } else {
       alert("Invalid credentials. Please try again.");
     }
