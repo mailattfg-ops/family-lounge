@@ -58,7 +58,8 @@ export default function Footer() {
                         <p className="text-[#4a4a4a] text-sm mb-5 leading-relaxed">
                             Beauty World Family Lounge, <br />
                             Krishnathulasi Arcade, <br />
-                            Kulanada, Pathanamthitta, <br />
+                            MC Road , Kulanada Junction, <br />
+                            Pathanamthitta, <br />
                             Kerala – 689503, India
                         </p>
                         
