@@ -56,7 +56,8 @@ export default function Home() {
                 <p className="text-[#6D6D6D] text-sm">
                   Beauty World Family Lounge,<br />
                   Krishnathulasi Arcade,<br />
-                  Kulanada, Pathanamthitta,<br />
+                  MC Road , Kulanada Junction,<br /> 
+                  Pathanamthitta,<br />
                   Kerala – 689503, India
                 </p>
              </div>
