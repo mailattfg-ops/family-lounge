@@ -7,6 +7,8 @@ export default function Service() {
     { title: "Hair Cutting", image: "/service-items/hair-cutting.jpg" },
     { title: "Styling Services", image: "/service-items/styling.jpg" },
     { title: "Hydra Facial", image: "/service-items/facial.jpg" },
+    { title: "Nail Art", image: "/service-items/nail-art.png" },
+    { title: "Tattoo", image: "/service-items/tattoo.png" },
   ];
 
   const tailoringServices = [
@@ -109,7 +111,7 @@ export default function Service() {
             <span className="theme-text">
               Elevate your personal style.&nbsp;
             </span>
-            Our salon provides a luxurious experience with expert haircuts, styling, vibrant coloring, and revitalizing facial treatments.&nbsp;
+            Our salon provides a luxurious experience with expert haircuts, styling, vibrant coloring, revitalizing facial treatments, creative nail art, and professional tattoos.&nbsp;
             <span className="theme-text">
               Look and feel your absolute best!
             </span>
