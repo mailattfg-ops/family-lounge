@@ -4,6 +4,7 @@ import "./globals.css";
 import LayoutWrapper from "../components/LayoutWrapper";
 import { Toaster } from "react-hot-toast";
 import WhatsAppButton from "../components/WhatsAppButton";
+import SupabaseKeepAlive from "../components/SupabaseKeepAlive";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,8 +35,9 @@ export default function RootLayout({
           <Toaster position="top-center" />
           {children}
           <WhatsAppButton />
+          <SupabaseKeepAlive />
         </LayoutWrapper>
       </body>
     </html>
   );
-}
+}
