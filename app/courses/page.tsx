@@ -42,6 +42,21 @@ export default function Home() {
           </p>
           <Courses />
         </div>
+
+        {/* Diploma Courses Pamphlet */}
+        <div className="w-full flex justify-center py-10 reveal opacity-0 translate-y-20 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]">
+          <div className="max-w-[490px] w-full px-4">
+            <Image
+              src="/Courses/diploma-pamphlet.png"
+              alt="Diploma Courses Pamphlet"
+              width={490}
+              height={1080}
+              priority
+              className="w-full h-auto rounded-3xl shadow-sm border border-gray-100"
+            />
+          </div>
+        </div>
+
         <WhyChoose />
         <Contact />
 

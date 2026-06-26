@@ -96,6 +96,20 @@ export default function Home() {
           />
         </div>
         <AboutUs />
+
+        {/* Beauty World Family Lounge Banner */}
+        <div className="w-full flex justify-center px-4 md:px-10 py-10 reveal opacity-0 translate-y-20 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]">
+          <div className="max-w-[1250px] w-full">
+            <Image
+              src="/banner/home-poster.jpeg"
+              alt="Beauty World Family Lounge Banner"
+              width={1200}
+              height={900}
+              className="w-full h-auto rounded-3xl shadow-sm border border-gray-100"
+            />
+          </div>
+        </div>
+
         <Contact />
       </main>
     </div>
